@@ -1,0 +1,223 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services</title>
+  <style>
+      #services{
+      width:100%;
+      height:100vh;
+      box-sizing: border-box;
+      font-family: Nunito, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 40px ;
+      
+      }
+      .s-heading h1{
+      color:white;
+      font-size: 5rem;
+      margin: 0px;
+      padding: 0px;
+      }
+      nav {
+      background-color:#AARRGGBB;
+      backdrop-filter: blur(5px);
+      color: white;
+      padding: 10px;
+      }
+      body {
+      background-image:url('static/demo.jpg ');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      align-items: flex-start;
+      }
+      .s-heading p{
+      color:white;
+      font-size: 1rem;
+      margin: 0px;
+      padding: 0px;
+      }
+      .s-heading{
+      text-align: center;
+      
+      margin: 20px 0px;
+      }
+      .s-box{
+      background-color:white;
+      width:350px;
+      height: 500px;
+      margin: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 2px 2px 12px rgb(8, 0, 0));
+      position: relative;
+      }
+      .b-container{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: flex-start;
+      }
+      .s-b-img{
+        width: 100%;
+        height: 70%;
+    }
+    .s-b-img img
+    {
+        width:100%;
+        height: 100%;	
+    }
+    .s-b-text{
+        width: 100%;
+        height: 30%;
+        background-color:white;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .s-b-text a{
+        margin: 0px;
+        color:#FFFFFF;
+        font-size: 1.1rem;
+        font-family: calibri;
+        display: block;
+        display: -webkit-box;
+        max-width: 80%;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .s-b-text a:hover{
+        color:rgba(255,255,255,0.50)
+    }
+    .s-type{
+        font-family: calibri;
+        color:black;
+        background-color: white;
+        padding: 10px 15px;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    }
+    .s-box:hover{
+        transform:translateY(-10px);
+        transition: all ease 0.3s;	
+    }
+    xx</style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg " >
+    <div class= "container-fluid">
+        <div class="logo">
+            <img class="myimg" src="{{ url_for('static', filename='img.png') }}" alt="" width="70" height="70" >
+        </div>
+        <a class="navbar-brand" href="#" style="color:white">Healthily</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0" >
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index" style="color:white"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/developer" style="color:white">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/blog" style="color:white"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/developer" style="color:white"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/contact" style="color:white"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--services-------------------->
+	<section id="services">
+	<!--heading-------------->
+	<div class="s-heading">
+	<h1>Services</h1>
+	<p>Here Is The Some Servies Which We Provide You.</p>
+	</div>
+	<!--services-box-container--------->
+	<div class="b-container">
+	<div class="s-box">
+	<!--img------------->
+	<div class="s-b-img">
+		<!--type----------->
+		<div class="s-type">Medication </div>
+		<!--name------->
+		<img src="static/med.jpeg" >
+	</div>
+	<!--text----------------->
+	<div class="s-b-text">
+	<a>MediTech provides tailored recommendations for appropriate medications based on identified health conditions, helping users make informed choices..</a>
+
+	</div>
+	</div>
+		<!--box-2---------------->
+	<div class="s-box">
+	<!--img------------->
+	<div class="s-b-img">
+	<!--type----------->
+		<div class="s-type">Precaution</div>
+		<!--name------->
+		<img src="static/pre.jpeg" >
+	</div>
+	<!--text----------------->
+	<div class="s-b-text">
+	<a >The chatbot suggests practical precautions that users can take to prevent illness and maintain their health, promoting proactive well-being.</a>
+	</div>
+	</div>
+		<div class="s-box">
+	<!--img------------->
+	<div class="s-b-img">
+		<!--type----------->
+		<div class="s-type"> Measures</div>
+		<!--name------->
+		<img src="static/measures.png" >
+	</div>
+	<!--text----------------->
+	<div class="s-b-text">
+	<a > MediTech is dedicated to promoting overall well-being by providing users with effective health measures tailored to their individual needs. The chatbot offers guidance on various strategies to enhance physical and mental health, including exercise recommendations, stress management techniques, and routine health screenings. By encouraging users to adopt these health measures, MediTech fosters a proactive approach to wellness, helping individuals stay informed and engaged in their health journey. With a focus on holistic well-being, MediTech empowers users to implement sustainable practices that contribute to a healthier lifestyle.</a>
+	</div>
+	</div>
+		<!--box-3---------------->
+	<div class="s-box">
+	<!--img------------->
+	<div class="s-b-img">
+		<!--type----------->
+		<div class="s-type">Dietary</div>
+		<!--name------->
+		<img src="static/diet.jpeg" >
+	</div>
+	<!--text----------------->
+	<div class="s-b-text">
+	<a >Users receive customized diet plans and suggestions aimed at addressing specific health concerns. MediTech ensures that users have the necessary nutritional support for recovery and overall maintenance of their health..</a>
+	</div>
+	</div>
+	</div>
+	</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

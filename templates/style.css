@@ -1,0 +1,34 @@
+
+        background-color:#f0f0f0;
+        color: white;
+        padding: 10px;
+        }
+        body {
+        background-image:url('static/img.jpeg ');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        }
+        h1 {
+        text-align: center;
+        color:	#FDFDFD;
+        text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+        }
+        container {
+        padding:auto;
+        margin:auto;
+        text-align:centre;
+        }
+        footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+       }
+

@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+  <style>
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cd__main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) !important;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.cd__main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+section {
+  position: relative;
+  z-index: 3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-header h2 {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.section-header p {
+  color: #FFF;
+}
+
+.row  {
+  display: flex;
+  flwx-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-info {
+  width: 50%;
+}
+
+.contact-info-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contact-info-icon {
+  height: 70px;
+  width: 70px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.contact-info-icon i {
+  font-size: 30px;
+  line-height: 70px;
+}
+
+.contact-info-content {
+  margin-left: 20px;
+}
+
+.contact-info-content h4 {
+  color: #1da9c0;
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+
+.contact-info-content p {
+  color: #FFF;
+  font-size: 1em;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 40px;
+  width: 45%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.contact-form h2 {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-form .input-box {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contact-form .input-box span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box textarea:focus ~ span{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contact-form .input-box input[type="submit"]
+{
+  width: 100%;
+  background: #00bcd4;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #00bcd4;
+  transition: 0.5s;
+}
+
+.contact-form .input-box input[type="submit"]:hover
+{
+  background: #FFF;
+  color: #00bcd4;
+}
+
+@media (max-width: 991px) {
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .row {
+    flex-direction: column;
+  }
+  
+  .contact-info {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  
+  .contact-form {
+    width: 100%;
+  }
+}
+  nav {
+        background-color:#AARRGGBB;
+        backdrop-filter: blur(5px);
+        color: white;
+        padding: 10px;
+        }
+        body {
+    background-image: url('static/demo.jpg '); /* Path to the image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Set height to 100% of the viewport */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg " >
+    <div class= "container-fluid">
+        <div class="logo">
+            <img class="myimg" src="{{ url_for('static', filename='img.png') }}" alt="" width="70" height="70" >
+        </div>
+        <a class="navbar-brand" href="#" style="color:white">Healthily</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0" >
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index" style="color:white"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/contact" style="color:white">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/blog" style="color:white"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/developer" style="color:white"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/contact" style="color:white"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+  <div class="container py-5">
+    <div class="row g-5">
+      <!-- Contact Information Block -->
+      <div class="col-xl-6">
+        <div class="row row-cols-md-2 g-4">
+          <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="aos-item__inner">
+              <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                <div class="d-flex justify-content-start">
+                  <i class="fa-solid fa-envelope h3 pe-2"></i>
+                  <span class="h5">Email</span>
+                </div>
+                <span>Meditech25x7@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="aos-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="aos-item__inner">
+              <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                <div class="d-flex justify-content-start">
+                  <i class="fa-solid fa-phone h3 pe-2"></i>
+                  <span class="h5">Phone</span>
+                </div>
+                <span>+0123456789, +9876543210</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aos-item mt-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="aos-item__inner">
+            <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+              <div class="d-flex justify-content-start">
+                <i class="fa-solid fa-location-pin h3 pe-2"></i>
+                <span class="h5">Office location</span>
+              </div>
+              <span>#007, Street name, Bigtown BG23 4YZ, Ireland</span>
+            </div>
+          </div>
+        </div>
+        <div class="aos-item" data-aos="fade-up" data-aos-delay="800">
+          <div class="mt-4 w-100 aos-item__inner">
+            <iframe class="hvr-shadow" width="100%" height="345" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Block -->
+      <div class="col-xl-6">
+        <h2 class="pb-4">Leave a message</h2>
+        <div class="row g-4">
+          <div class="col-6 mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Fname</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John">
+          </div>
+          <div class="col-6 mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Lname</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Doe">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Phone</label>
+          <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+1234567890">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Country</label>
+          <select class="form-select" aria-label="Default select example">
+            <option value="1">USA</option>
+            <option value="2">Non USA</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-dark">Send Message</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
