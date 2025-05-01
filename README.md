@@ -1,4 +1,4 @@
-# 🩺 MediTech - AI-Powered Healthcare Chatbot
+# 🩺 MediTech -  Healthcare Chatbot
 
 ![Home Page](static/homepage.png)
 
@@ -107,11 +107,7 @@ Visit: [http://localhost:5000](http://localhost:5000)
 
 ---
 
-## 📷 Preview
 
-![Homepage Preview](static/homepage.png)
-
----
 
 ## 🧪 Sample Usage
 
