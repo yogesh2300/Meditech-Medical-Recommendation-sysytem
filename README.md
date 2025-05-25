@@ -74,50 +74,6 @@ Meditech/
 
 ---
 
-## 🔧 Setup Instructions
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/Meditech.git
-cd Meditech
-```
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Ensure the following files and folders exist
-
-- `model/svc.pkl`
-- All `datasets/*.csv` files
-- `static/homepage.png` image
-
-### 4. Run the Flask application
-
-```bash
-python main.py
-```
-
-### 5. Open in browser
-
-Visit: [http://localhost:5000](http://localhost:5000)
-
----
-
-
-
-## 🧪 Sample Usage
-
-1. Register a new user or login.
-2. Enter your symptoms separated by commas (e.g., `headache, nausea, fever`).
-3. Get real-time prediction, description, medications, diet, and more.
-4. Use navigation links to explore more sections like `About`, `Blog`, and `Contact`.
-
----
-
 ## ✅ Requirements
 
 ```txt
@@ -136,15 +92,6 @@ pip install flask flask_sqlalchemy bcrypt numpy pandas scikit-learn
 
 ---
 
-## 📈 Future Enhancements
-
-- 🔊 Voice interaction for input/output
-- 🧬 Enhanced ML model with more data and accuracy
-- 📊 Admin dashboard for managing users and datasets
-- 📞 Integration with telehealth services and APIs
-
----
 
 
 
-> © 2025 MediTech. All rights reserved.
