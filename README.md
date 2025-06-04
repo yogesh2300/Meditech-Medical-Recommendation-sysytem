@@ -74,24 +74,6 @@ Meditech/
 
 ---
 
-## ✅ Requirements
-
-```txt
-flask
-flask_sqlalchemy
-bcrypt
-numpy
-pandas
-scikit-learn
-```
-
-> You can install them with:
-```bash
-pip install flask flask_sqlalchemy bcrypt numpy pandas scikit-learn
-```
-
----
-
 
 
 
